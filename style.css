@@ -60,11 +60,16 @@ body {
 
 .card {
   color: white;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .name {
-  font-size: 20px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.location, .quote {
+  font-size: 0.9rem;
 }
 
 .location {
@@ -72,10 +77,15 @@ body {
   font-weight: 700;
 }
 
+.quote {
+  font-weight: 300;
+}
+
 .social-links {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
+
 /***********
 ***Layout***
 ************/
@@ -101,24 +111,28 @@ body {
 }
 
 .avatar {
-  width: 90px;
+  width: 88px;
   border-radius: 50%;
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
 }
 
 .name {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.4em;
 }
 
 .location {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.6em;
+}
+
+.quote {
+  margin-bottom: 1.7em;
 }
 
 .social-links {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  min-width: 280px;
+  gap: 1.14em;
+  min-width: 304px;
 }
 
 .social-item {
