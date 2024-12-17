@@ -136,11 +136,12 @@ body {
 .product {
   display: grid;
   grid-template-columns: 2.3em repeat(2, 1fr) 2.3em;
-  grid-template-rows: 342px 2.1em auto auto auto auto auto 2.3em;
+  grid-template-rows: 342px 2.1em repeat(5, auto)  2.3em;
   width: 93.2%;
   max-width: 600px;
   border-radius: 8px;
   background-color: var(--clr-white);
+  box-shadow: 1px 1px 5px -6px var(--clr-grey);
   overflow: hidden;
 }
 
@@ -206,7 +207,8 @@ body {
 @media (min-width: 700px) {
   .product {
     grid-template-columns: 300px 2.3em 1fr 90px 2.3em;
-    grid-template-rows: 2.15em auto auto auto auto auto 2.05em; 
+    grid-template-rows: 2.15em repeat(5, auto) 2.05em; 
+    border-radius: 10px;
   }
 
   .product-image {
