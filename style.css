@@ -195,6 +195,12 @@ body {
   border-radius: 8px;
   margin-top: 1em;
   background-color: var(--clr-light-green);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--clr-dark-green);
 }
 
 @media (min-width: 700px) {
