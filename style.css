@@ -57,14 +57,18 @@ h2,
 h3,
 p,
 ul,
+ol,
 li {
   margin: 0;
+}
+
+ul, ol {
+  padding: 0;
 }
 
 ul li {
   list-style: none;
   display: flex;
-  align-items: center;
 }
 
 img {
@@ -74,6 +78,11 @@ img {
   min-height: 0;
   max-height: 100%;
   object-fit: cover;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 a {
@@ -112,7 +121,7 @@ h3 {
   color: var(--clr-brown-800);
 }
 
-.recipe-section--highlighted .recipe-section-title {
+.facts-section-title {
   font-family: "Outfit", sans-serif;
   font-size: 1.25rem;
   font-weight: var(--font-weight-semibold);
@@ -121,12 +130,18 @@ h3 {
 
 .recipe-unordered-list > li::before {
   content: "\25A0";
-  font-size: 0.25rem;
+  align-self: center;
+  font-size: 0.3rem;
   color: var(--clr-brown-800);
 }
 
-.recipe-section--highlighted .recipe-unordered-list > li::before {
+.facts-section .recipe-unordered-list > li::before {
   color: var(--clr-rose-800);
+}
+
+.recipe-ordered-list > li::marker {
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-brown-800);
 }
 
 .table th {
@@ -134,7 +149,7 @@ h3 {
 }
 
 .table td {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   color: var(--clr-brown-800);
 }
 
@@ -159,7 +174,88 @@ body {
 }
 
 .recipe {
+  max-width: 736px;
+  width: 100%;
   background-color: var(--clr-white);
+}
+
+.recipe-image {
+  margin-bottom: 2.5em;
+}
+
+.recipe-content {
+  padding-inline: 2rem;
+}
+
+.recipe-title {
+  margin-bottom: 0.65em;
+}
+
+.recipe-section {
+  margin-top: 2em;
+}
+
+.recipe-section + .recipe-section {
+  padding-top: 2em;
+  border-top: 1px solid var(--clr-stone-150);
+}
+
+.facts-section {
+  padding: 1.5em;
+  margin-top: 2em;
+  border-radius: 10px;
+  background-color: var(--clr-rose-50);
+}
+
+.recipe-section-title, .facts-section-title {
+  margin-bottom: 0.85em;
+}
+
+.recipe-unordered-list, .recipe-ordered-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-left: 0.5em;
+}
+
+.recipe-ordered-list {
+  padding-left: 1em;
+}
+
+.recipe-ordered-list > li {
+  padding-left: 1em;
+}
+
+.recipe-unordered-list > li > span {
+  margin-left: 1.75rem;
+}
+
+.table {
+  margin-top: 0.6em;
+}
+
+.table tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.table tr:not(:last-child) th,
+.table tr:not(:last-child) td {
+  border-bottom: 1px solid var(--clr-stone-150);
+}
+
+.table th,
+.table td {
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+.table th {
+  padding-left: 2em;
+}
+
+.table td {
+  padding-left: 0.5em;
 }
 
 /***********
