@@ -163,6 +163,7 @@ body {
 .main {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   min-height: 100vh;
 }
 
@@ -174,17 +175,21 @@ body {
 }
 
 .recipe {
+  display: grid;
+  grid-template-columns: 2em 1fr 2em;
+  grid-template-rows: repeat(7, auto) 2em;
   max-width: 736px;
   width: 100%;
   background-color: var(--clr-white);
 }
 
-.recipe-image {
-  margin-bottom: 2.5em;
+.recipe > * {
+  grid-column: 2 / -2;
 }
 
-.recipe-content {
-  padding-inline: 2rem;
+.recipe-image {
+  grid-column: 1 / -1;
+  margin-bottom: 2.5em;
 }
 
 .recipe-title {
