@@ -187,8 +187,9 @@ body {
 @media (min-width: 580px) {
   .recipe {
     grid-template-columns: 2.5em 1fr 2.5em;
-    grid-template-rows: repeat(7, auto) 2.5em;
-    padding-top: 2.5em;
+    grid-template-rows: repeat(7, auto);
+    width: 95%;
+    padding-block: 2.525em 1.715em;
     border-radius: 25px;
   }
 }
@@ -210,7 +211,7 @@ body {
 }
 
 .recipe-title {
-  margin-bottom: 0.65em;
+  margin-bottom: 0.6em;
 }
 
 .recipe-section {
@@ -231,7 +232,7 @@ body {
 
 @media (min-width: 580px) {
   .facts-section {
-    padding: 1.75em;
+    padding: 1.725em;
   }
 }
 
