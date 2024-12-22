@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [GitHub](https://github.com/marisudris/marisudris-frontend-mentor-recipe-page)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/marisudris-frontend-mentor-recipe-page/)
 
 ## My process
 
