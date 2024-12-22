@@ -130,9 +130,9 @@ h3 {
 }
 
 .recipe-unordered-list > li::before {
-  content: "\25A0";
+  content: "\2B24";
   align-self: center;
-  font-size: 0.3rem;
+  font-size: 0.25rem;
   color: var(--clr-brown-800);
 }
 
