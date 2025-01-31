@@ -162,16 +162,12 @@ body {
 }
 
 .main {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   min-height: 100vh;
 }
 
 @media (min-width: 580px) {
   .main {
-    padding-top: 0;
-    align-items: center;
+    padding-block: 7.6875rem;
   }
 }
 
@@ -179,8 +175,8 @@ body {
   display: grid;
   grid-template-columns: 2em 1fr 2em;
   grid-template-rows: repeat(7, auto) 2em;
-  max-width: 736px;
-  width: 100%;
+  width: min(100%, 46rem);
+  margin-inline: auto;
   background-color: var(--clr-white);
 }
 
@@ -188,7 +184,6 @@ body {
   .recipe {
     grid-template-columns: 2.5em 1fr 2.5em;
     grid-template-rows: repeat(7, auto);
-    width: 95%;
     padding-block: 2.525em 1.715em;
     border-radius: 25px;
   }
