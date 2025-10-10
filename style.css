@@ -95,7 +95,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5em;
+  padding: clamp(1.5rem, 1.148rem + 1.502vw, 2.5rem);
   background-color: var(--clr-mid-dark);
   border-radius: 10px;
 }
