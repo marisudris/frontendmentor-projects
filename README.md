@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/marisudris/frontend-mentor-product-preview-card-component)
-- Live Site URL: [Add live site URL here](https://marisudris.github.io/frontend-mentor-product-preview-card-component/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontend-mentor-product-preview-card-component)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontend-mentor-product-preview-card-component/)
 
 ## My process
 
