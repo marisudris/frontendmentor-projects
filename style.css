@@ -126,7 +126,7 @@ body {
   padding-top: 5em;
 }
 
-@media (min-width: 700px) { 
+@media (min-width: 43.75rem) { 
   .main {
     padding-top: 0;
     align-items: center;
@@ -137,8 +137,7 @@ body {
   display: grid;
   grid-template-columns: 2.3em repeat(2, 1fr) 2.3em;
   grid-template-rows: 342px 2.1em repeat(5, auto)  2.3em;
-  width: 93.2%;
-  max-width: 600px;
+  width: min(93.2%, 42.857em);
   border-radius: 8px;
   background-color: var(--clr-white);
   box-shadow: 1px 1px 5px -6px var(--clr-grey);
@@ -191,7 +190,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.75em;
-  height: 50px;
+  height: 3.571em;
   border: none;
   border-radius: 8px;
   margin-top: 1em;
@@ -204,7 +203,7 @@ body {
   background-color: var(--clr-dark-green);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
   .product {
     grid-template-columns: 300px 2.3em 1fr 90px 2.3em;
     grid-template-rows: 2.15em repeat(5, auto) 2.05em; 
@@ -246,7 +245,7 @@ body {
 
   .button {
     grid-column: 3 / -2;
-    height: 48px;
+    height: 3.428em;
     grid-row: 6;
     margin-top: 1.4em;
   }
