@@ -1,0 +1,98 @@
+/** Reset */
+:root {
+    box-sizing: border-box;
+    --slate-900: #1F314F;
+    --slate-500: #68778D;
+    --slate-300: #D5E1EF;
+    --white: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/** Typography */
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+}
+
+h1,
+h2 {
+    font-size: 1.375rem;
+    line-height: 1.2;
+}
+
+.card {
+    color: var(--slate-500);
+    text-align: center;
+}
+
+.card-title {
+    color: var(--slate-900);
+    margin-bottom: 0.7em;
+}
+
+.card-description {
+    letter-spacing: 0.2px;
+}
+
+/** Layout */
+body {
+    background-color: var(--slate-300);
+}
+
+main {
+    margin-top: clamp(10.5em, calc(8.775em + 7.362vw), 15.4em);
+}
+
+.card {
+    background-color: var(--white);
+    width: min(100%, 320px);
+    padding: 1rem 1rem 2.5rem;
+    border-radius: 20px;
+    margin-inline: auto;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
+}
+
+.card-img {
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.card-content {
+    padding-inline: 1rem;
+}
+
+.card-description {
+    margin-bottom: 0;
+}
+
+/** Utilities */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
