@@ -59,7 +59,7 @@ body {
 }
 
 main {
-    margin-top: clamp(10.5em, calc(8.775em + 7.362vw), 15.4em);
+    margin-block: clamp(10.5em, calc(8.775em + 7.362vw), 15.4em);
 }
 
 .card {
