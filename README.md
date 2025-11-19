@@ -17,6 +17,7 @@ Collection of my [Frontend Mentor](https://www.frontendmentor.io/) challenge sol
 - [Ping Coming Soon](./ping-coming-soon-page/)
 - [Product Preview Card](./product-preview-card-component/)
 - [Profile Card](./profile-card-component/)
+- [QR Code Component](./qr-code-component/)
 - [Recipe Page](./recipe-page/)
 - [Results Summary](./results-summary-component/)
 - [Single Price Grid](./single-price-grid-component/)
