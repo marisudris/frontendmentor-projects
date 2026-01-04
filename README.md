@@ -7,6 +7,7 @@ Collection of my [Frontend Mentor](https://www.frontendmentor.io/) challenge sol
 - [3 Column Preview Card](./3-column-preview-card-component/)
 - [Article Preview](./article-preview-component/)
 - [Base Apparel Coming Soon](./base-apparel-coming-soon/)
+- [Bento Grid](./bento-grid/)
 - [Blog Preview Card](./blog-preview-card-main/)
 - [FAQ Accordion](./faq-accordion/)
 - [FAQ Accordion Card](./faq-accordion-card/)
