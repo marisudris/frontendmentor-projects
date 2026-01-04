@@ -49,7 +49,7 @@ Bento grids are tough to get right, especially if working only with image files,
 
 ### Continued development
 
-It's worth investing more time in plannin stage before writing the first line of code. Working from design files is also way easier.
+It's worth investing more time in planning stage before writing the first line of code. Working from design files is also way easier.
 
 ## Author
 
