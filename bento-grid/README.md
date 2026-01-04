@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-Bento grids are tough to get right, especially if working only with image files, not Figma (or any other) design files. Some of the font properties (line heights, letter spacing) were a bit tricky to get right. Columns are easy, but rows were tricky. I ended up using explicit grid areas and doing some hacky grid row definitions to adjust the spacing of elements relative to each other, and I also did use lateral grid columns instead of margins to center the grid (which was an overcomplicated thing to do, but I just did it to see if I coul, since I've seen it done before and it forced me to understand and read about the grid layout and spacing algorithms).
+Bento grids are tough to get right, especially if working only with image files, not Figma (or any other) design files. Some of the font properties (line heights, letter spacing) were a bit tricky to get right. Columns are easy, but rows were tricky. I ended up using explicit grid areas and doing some hacky grid row definitions to adjust the spacing of elements relative to each other, and I also did use lateral grid columns instead of margins to center the grid (which was an overcomplicated thing to do, but I just did it to see if I could, since I've seen it done before and it forced me to understand and read about the grid layout and spacing algorithms).
 
 ### Continued development
 
