@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-challenges/tree/main/bento-grid)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-challenges/bento-grid/)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/bento-grid/)
 
 ## My process
 
