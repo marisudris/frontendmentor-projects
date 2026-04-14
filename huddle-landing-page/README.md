@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/huddle-landing-page/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/huddle-landing-page)
 - Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/huddle-landing-page/)
 
 ## My process

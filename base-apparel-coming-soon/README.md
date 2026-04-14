@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub]()
-- Live Site URL: [GitHub Pages]()
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/base-apparel-coming-soon)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/base-apparel-coming-soon/)
 
 ## My process
 
