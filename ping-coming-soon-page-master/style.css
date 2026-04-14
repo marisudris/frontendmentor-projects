@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+/** Resets **/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/** Styles **/
+:root {
+  --clr-blue: hsl(223, 87%, 63%);
+  --clr-light-blue: hsl(223, 79%, 71%);
+
+  --clr-pale-blue: hsl(223, 100%, 88%);
+  --clr-very-pale-blue: hsl(224, 87%, 91%);
+  --clr-light-red: hsl(354, 100%, 66%);
+
+  --clr-gray: hsl(0, 0%, 59%);
+  --clr-light-gray: hsl(0, 0%, 75%);
+  --clr-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 1.75em;
+}
+
+.header {
+  max-width: 640px;
+  margin: 5.375em 1.125em 5em;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .header {
+    margin-inline: 0;
+  }
+}
+
+.logo {
+  width: 55px;
+  margin-bottom: 2.75em;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    width: 85px;
+  }
+}
+
+.title {
+  color: var(--clr-gray);
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 3rem;
+    margin-bottom: 0.4em;
+  }
+}
+
+.header__byline {
+  color: var(--clr-very-dark-blue);
+  font-size: 0.7rem;
+  margin-bottom: 3.5em;
+}
+
+@media (min-width: 600px) {
+  .header__byline {
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+  }
+}
+
+.form {
+  display: grid;
+  grid-auto-flow: dense;
+  gap: 1em;
+}
+
+@media (min-width: 600px) {
+  .form {
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 3.5em auto;
+  }
+}
+
+.input-text {
+  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  width: 100%;
+  border: 1px solid var(--clr-pale-blue);
+  border-radius: 5em;
+  padding: 1em 2em;
+}
+
+.input-text[aria-invalid] {
+  border-color: var(--clr-light-red);
+}
+
+.input-text[aria-invalid]:focus {
+  outline: 2px solid var(--clr-light-red);
+}
+
+.input-text::placeholder {
+  color: var(--clr-light-gray);
+}
+
+.input-warning {
+  grid-column: 1;
+  color: var(--clr-light-red);
+  font-size: 0.6rem;
+  font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+  font-style: italic;
+  margin: -1em 0 -0.75em 2.6em;
+  text-align: start;
+}
+
+.button {
+  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  font-weight: bold;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+  background: var(--clr-blue);
+  border: none;
+  border-radius: 5em;
+  box-shadow: 0 5px 10px 0 var(--clr-pale-blue);
+  transition: background 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--clr-light-blue);
+}
+
+.main {
+  max-width: 640px;
+}
+
+.footer {
+  padding-bottom: 3em;
+  margin-top: 4.5em;
+  text-align: center;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 0.8125em;
+  margin-bottom: 1.5em;
+}
+
+.social__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--clr-very-pale-blue);
+  border-radius: 50%;
+  transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background: var(--clr-blue);
+  border-color: var(--clr-blue);
+}
+
+.social__image {
+  fill: var(--clr-blue);
+  transition: fill 0.2s ease-in-out;
+}
+
+.social__link:hover .social__image,
+.social__link:focus .social__image {
+  fill: white;
+}
+
+.copyright {
+  color: var(--clr-gray);
+  font-size: 0.8rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution__link {
+  color: hsl(228, 45%, 44%);
+}
+
+/** Utility classes **/
+.accent {
+  color: var(--clr-very-dark-blue);
+  font-weight: 700;
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  opacity: 0;
+}
