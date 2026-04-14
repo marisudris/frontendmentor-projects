@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<script src="./script.js" defer></script>
+<body>
+  <header class="header visually-hidden">
+    <h1>Results Summary Component</h1>
+  </header>
+  <main class="main">
+    <article class="results-card" aria-label="Results Summary">
+      <section class="result-section">
+        <h2 class="result-title">Your Result</h2>
+        <div class="score-circle">
+          <p class="score-value">
+            <span class="score-number score-js"></span>
+            <span class="score-total score-total-js"></span>
+          </p>
+        </div>
+        <div class="result-verdict verdict-js">
+          <p class="result-grade">Great</p>
+          <p class="result-description">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </section>
+      <section class="summary-section">
+        <h2 class="summary-title">Summary</h2>
+        <ul class="metrics-list">
+          <li class="metric-item metric-reaction">
+            <div class="metric-info">
+              <img src="./assets/images/icon-reaction.svg" alt="" aria-hidden="true" class="metric-icon">
+              <span class="metric-name">Reaction</span>
+            </div>
+            <p class="metric-score">
+              <span class="score-achieved"></span>
+              <span class="score-separator" aria-hidden="true"> / </span>
+              <span class="score-max">100</span>
+            </p>
+          </li>
+          <li class="metric-item metric-memory">
+            <div class="metric-info">
+              <img src="./assets/images/icon-memory.svg" alt="" aria-hidden="true" class="metric-icon">
+              <span class="metric-name">Memory</span>
+            </div>
+            <p class="metric-score">
+              <span class="score-achieved"></span>
+              <span class="score-separator" aria-hidden="true"> / </span>
+              <span class="score-max">100</span>
+            </p>
+          </li>
+          <li class="metric-item metric-verbal">
+            <div class="metric-info">
+              <img src="./assets/images/icon-verbal.svg" alt="" aria-hidden="true" class="metric-icon">
+              <span class="metric-name">Verbal</span>
+            </div>
+            <p class="metric-score">
+              <span class="score-achieved"></span>
+              <span class="score-separator" aria-hidden="true"> / </span>
+              <span class="score-max">100</span>
+            </p>
+          </li>
+          <li class="metric-item metric-visual">
+            <div class="metric-info">
+              <img src="./assets/images/icon-visual.svg" alt="" aria-hidden="true" class="metric-icon">
+              <span class="metric-name">Visual</span>
+            </div>
+            <p class="metric-score">
+              <span class="score-achieved"></span>
+              <span class="score-separator" aria-hidden="true"> / </span>
+              <span class="score-max">100</span>
+            </p>
+          </li>
+        </ul>
+        <button type="button" class="button">Continue</button>
+      </section>
+    </article>
+  </main>
+  
+  <footer class="attribution visually-hidden">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="frontendmentor.io/profile/marisudris">Māris</a>.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,394 @@
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  box-sizing: border-box;
+  --font-weight-regular: 500;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+
+  --clr-pale-blue: hsl(221, 100%, 96%);
+  --clr-light-lavender: hsl(241, 100%, 89%);
+  --clr-dark-gray-blue: hsl(224, 30%, 27%);
+  --clr-light-gray-blue: hsl(222, 12%, 49%);
+
+  --clr-red: hsl(0, 100%, 67%);
+  --clr-orange: hsl(39, 100%, 56%);
+  --clr-teal: hsl(166, 100%, 37%);
+  --clr-blue: hsl(234, 85%, 45%);
+
+  --clr-red-bg: hsla(0, 100%, 67%, 0.05);
+  --clr-orange-bg: hsla(39, 100%, 56%, 0.035);
+  --clr-teal-bg: hsla(166, 100%, 37%, 0.035);
+  --clr-blue-bg: hsla(234, 85%, 45%, 0.035);
+
+
+  --clr-bg-gradient: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%) -25%,
+    hsl(241, 81%, 54%)
+  );
+  --clr-circle-gradient: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+
+  --box-shadow: 0px 25px 60px -10px hsla(241, 95%, 70%, 0.2);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/***********
+***Resets***
+************/
+body {
+  margin: 0;
+  line-height: 1.35;
+}
+
+h1,
+h2 {
+  line-height: 1;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+abbr,
+button {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+}
+
+/***************
+***Typography***
+****************/
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: var(--font-weight-regular);
+}
+
+.results-card {
+  font-size: clamp(1rem, 0.93rem + 0.3vw, 1.1rem)
+}
+
+.result-section {
+  color: var(--clr-light-lavender);
+}
+
+.score-number,
+.result-grade {
+  color: white;
+}
+
+.result-title,
+.summary-title {
+  font-size: clamp(1.1rem, 0.959rem + 0.601vw, 1.5rem);
+}
+
+.score-number {
+  font-size: clamp(3.5rem, 3.148rem + 1.502vw, 4.5rem);
+  font-weight: var(--font-weight-extra-bold);
+  line-height: 1.25;
+}
+
+.result-grade {
+  font-size: clamp(1.563rem, 1.408rem + 0.657vw, 2rem);
+  font-weight: var(--font-weight-bold);
+}
+
+.score-achieved,
+.score-max {
+  font-weight: var(--font-weight-bold);
+}
+
+.score-separator, .score-max {
+  color: var(--clr-light-gray-blue);
+}
+
+.metric-name {
+  font-weight: var(--font-weight-bold);
+}
+
+.metric-reaction .metric-name {
+  color: var(--clr-red);
+}
+
+.metric-memory .metric-name {
+  color: var(--clr-orange);
+}
+
+.metric-verbal .metric-name {
+  color: var(--clr-teal);
+}
+
+.metric-visual .metric-name {
+  color: var(--clr-blue);
+}
+
+.button {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-bold);
+}
+
+/***********
+***Layout***
+************/
+body {
+  background-color: var(--clr-pale-blue);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+@media (min-width: 48rem) {
+  .main {
+    align-items: center;
+  }
+}
+
+.results-card {
+  display: grid;
+  max-width: 46rem;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+}
+
+@media (min-width: 48rem) {
+  .results-card {
+    grid-template-columns: 1fr 1fr;
+    border-radius: 32px;
+  }
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.75em 3.75em 0.75em;
+  background: var(--clr-bg-gradient);
+  border-radius: 0 0 32px 32px;
+  text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .result-section {
+    padding: 2.39em 3.13em 0;
+    border-radius: 32px;
+  }
+}
+
+.result-title {
+  margin-bottom: 1.45em;
+}
+
+@media (min-width: 48rem) {
+  .result-title {
+    margin-bottom: 1.6em;
+  }
+}
+
+.score-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: clamp(8.75rem, 7.43rem + 5.634vw, 12.5rem);
+  height: clamp(8.75rem, 7.43rem + 5.634vw, 12.5rem);
+  max-width: 13rem;
+  max-height: 13rem;
+  border-radius: 50%;
+  margin-bottom: 1.375em;
+  background: var(--clr-circle-gradient);
+}
+
+@media (min-width: 48rem) {
+  .score-circle {
+    margin-bottom: 1.5em;
+  }
+}
+
+.score-value > * {
+  display: block;
+}
+
+.score-total {
+  opacity: 0.8;
+}
+
+@media (min-width: 48rem) {
+  .score-total {
+    margin-top: -0.3125rem;
+  }
+}
+
+.result-verdict {
+  opacity: 0;
+}
+
+.result-verdict--visible {
+  opacity: 1;
+}
+
+.result-grade {
+  margin-bottom: 0.2em;
+}
+
+@media (min-width: 48rem) {
+  .result-grade {
+    margin-bottom: 0.4em;
+  }
+}
+
+.result-description {
+  margin-bottom: 1.5em;
+}
+
+.summary-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1.563em 1.875em;
+}
+
+@media (min-width: 48rem) {
+  .summary-section {
+    padding: 2.39em 2.27em 2.61em;
+  }
+}
+
+.summary-title {
+  margin-bottom: 1.35em;
+}
+
+.metrics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1em 1em;
+  border-radius: 15px;
+}
+
+@media (min-width: 48rem) {
+  .metric-item {
+    padding: 0.875em 0.9em;
+  }
+}
+
+.score-separator {
+  margin-left: 0.2em;
+}
+.metric-reaction {
+  background-color: var(--clr-red-bg);
+}
+
+.metric-memory {
+  background-color: var(--clr-orange-bg);
+}
+
+.metric-verbal {
+  background-color: var(--clr-teal-bg);
+}
+
+.metric-visual {
+  background-color: var(--clr-blue-bg);
+
+}
+
+.metric-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.button {
+  position: relative;
+  padding: 0.875em 1.333em;
+  border: none;
+  border-radius: 999em;
+  margin-top: 1em;
+  background-color: var(--clr-dark-gray-blue);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--clr-bg-gradient);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: -1;
+}
+
+.button:hover::before,
+.button:focus::before {
+  opacity: 1;
+}
+
+@media (min-width: 48rem) {
+  .button {
+    margin-top: 2.2em;
+  }
+}
+
+/***********
+***Utilities***
+*************/
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  opacity: 0;
+}
