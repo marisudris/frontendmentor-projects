@@ -13,6 +13,7 @@ Collection of my [Frontend Mentor](https://www.frontendmentor.io/) challenge sol
 - [Huddle Landing Page](./huddle-landing-page/)
 - [Intro Component Signup](./intro-component-with-signup-form/)
 - [NFT Preview Card](./nft-preview-card-component/)
+- [Order Component](./order-component/)
 - [Ping Coming Soon](./ping-coming-soon-page/)
 - [Product Preview Card](./product-preview-card-component/)
 - [Profile Card](./profile-card-component/)
