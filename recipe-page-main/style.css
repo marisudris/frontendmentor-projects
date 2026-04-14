@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-stone-100: hsl(30, 54%, 90%);
+  --clr-stone-150: hsl(30, 18%, 87%);
+  --clr-stone-600: hsl(30, 10%, 34%);
+  --clr-stone-900: hsl(24, 5%, 18%);
+
+  --clr-brown-800: hsl(14, 45%, 36%);
+
+  --clr-rose-50: hsl(330, 100%, 98%);
+  --clr-rose-800: hsl(332, 51%, 32%);
+
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/***********
+***Resets***
+************/
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+h2,
+h3,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+}
+
+img {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+/***************
+***Typography***
+****************/
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Young Serif", serif;
+}
+
+.recipe {
+  font-weight: var(--font-weight-regular);
+  color: var(--clr-stone-600);
+}
+
+.recipe-title {
+  font-size: 2.25rem;
+  font-size: clamp(2.25rem, 2.162rem + 0.376vw, 2.5rem);
+  font-weight: var(--font-weight-regular);
+  color: var(--clr-stone-900);
+}
+
+.recipe-section-title {
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-regular);
+  color: var(--clr-brown-800);
+}
+
+.facts-section-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--clr-rose-800);
+}
+
+.recipe-unordered-list > li::before {
+  content: "\2B24";
+  align-self: center;
+  font-size: 0.25rem;
+  color: var(--clr-brown-800);
+}
+
+.facts-section .recipe-unordered-list > li::before {
+  color: var(--clr-rose-800);
+}
+
+.recipe-ordered-list > li::marker {
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-brown-800);
+}
+
+.table th {
+  font-weight: var(--font-weight-regular);
+}
+
+.table td {
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-brown-800);
+}
+
+/***********
+***Layout***
+************/
+body {
+  background-color: var(--clr-stone-100);
+}
+
+.main {
+  min-height: 100vh;
+}
+
+@media (min-width: 580px) {
+  .main {
+    padding-block: 6.2915vh;
+  }
+}
+
+.recipe {
+  display: grid;
+  grid-template-columns: 2em 1fr 2em;
+  grid-template-rows: repeat(7, auto) 2em;
+  width: min(100%, 46rem);
+  margin-inline: auto;
+  background-color: var(--clr-white);
+}
+
+@media (min-width: 580px) {
+  .recipe {
+    grid-template-columns: 2.5em 1fr 2.5em;
+    grid-template-rows: repeat(7, auto);
+    padding-block: 2.525em 1.715em;
+    border-radius: 25px;
+  }
+}
+
+.recipe > * {
+  grid-column: 2 / -2;
+}
+
+.recipe-image {
+  grid-column: 1 / -1;
+  margin-bottom: 2.5em;
+}
+
+@media (min-width: 580px) {
+  .recipe-image {
+    grid-column: 2 / -2;
+    border-radius: 12px;
+  }
+}
+
+.recipe-title {
+  margin-bottom: 0.6em;
+}
+
+.recipe-section {
+  margin-top: 2em;
+}
+
+.recipe-section + .recipe-section {
+  padding-top: 2em;
+  border-top: 1px solid var(--clr-stone-150);
+}
+
+.facts-section {
+  padding: 1.5em;
+  margin-top: 2em;
+  border-radius: 10px;
+  background-color: var(--clr-rose-50);
+}
+
+@media (min-width: 580px) {
+  .facts-section {
+    padding: 1.725em;
+  }
+}
+
+.recipe-section-title, .facts-section-title {
+  margin-bottom: 0.85em;
+}
+
+.recipe-unordered-list, .recipe-ordered-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-left: 0.5em;
+}
+
+.recipe-ordered-list {
+  padding-left: 1em;
+}
+
+.recipe-ordered-list > li {
+  padding-left: 1em;
+}
+
+.recipe-unordered-list > li > span {
+  margin-left: 1.75rem;
+}
+
+.table {
+  margin-top: 0.6em;
+}
+
+.table tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.table tr:not(:last-child) th,
+.table tr:not(:last-child) td {
+  border-bottom: 1px solid var(--clr-stone-150);
+}
+
+.table th,
+.table td {
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+.table th {
+  padding-left: 2em;
+}
+
+.table td {
+  padding-left: 0.5em;
+}
+
+/***********
+***Utilities***
+*************/
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  opacity: 0;
+}
