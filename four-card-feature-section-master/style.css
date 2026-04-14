@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+/** Resets **/
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/** Styles **/
+body {
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+
+  --clr-very-dark-blue: hsl(234, 12%, 34%);
+  --clr-grayish-blue: hsl(229, 6%, 66%);
+  --clr-very-light-gray: hsl(0, 0%, 98%);
+
+  --clr-shadow: hsl(212, 41%, 56%);
+
+  font-family: "Poppins", sans-serif;
+  background: var(--clr-very-light-gray);
+}
+
+.header {
+  width: 90%;
+  margin: 5.75em auto 4em;
+  text-align: center;
+}
+
+.header__prose {
+  color: var(--clr-grayish-blue);
+  margin: 0 auto;
+  max-width: 55ch;
+}
+
+.title {
+  color: var(--clr-very-dark-blue);
+  font-size: 1.5625rem;
+  font-weight: 200;
+  margin-bottom: 0.575em;
+}
+
+@media (min-width: 900px) {
+  .title {
+    font-size: 2.375rem;
+  }
+}
+
+.title--bold {
+  display: block;
+  font-weight: bold;
+}
+
+.main {
+  width: 88%;
+  max-width: 1110px;
+  margin: 0 auto 5em;
+}
+
+.main,
+.card-column {
+  display: grid;
+  gap: 1.875rem;
+}
+
+@media (min-width: 900px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+
+.main > *,
+.card-column > * {
+  min-height: 13.85em;
+}
+
+@media (min-width: 900px) {
+}
+
+.card {
+  background: white;
+  padding: 2em 1.75em;
+  border-radius: 8px;
+  box-shadow: 0 15px 35px -25px var(--clr-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--clr-red);
+  overflow: hidden;
+}
+
+.card--cyan::before {
+  background: var(--clr-cyan);
+}
+
+.card--orange::before {
+  background: var(--clr-orange);
+}
+
+.card--red::before {
+  background: var(--clr-red);
+}
+
+.card--blue::before {
+  background: var(--clr-blue);
+}
+
+.card__title {
+  color: var(--clr-very-dark-blue);
+  font-size: 1.375rem;
+  margin-bottom: 0.5em;
+}
+
+.card__prose {
+  color: var(--clr-grayish-blue);
+  font-size: 0.85rem;
+  margin-bottom: 2.8em;
+}
+
+.card__image {
+  display: block;
+  margin-left: auto;
+}
+/** Utility classes **/
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  opacity: 0;
+}
