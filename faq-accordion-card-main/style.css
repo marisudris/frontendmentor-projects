@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/** Resets **/
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+summary {
+  list-style: none;
+}
+
+/** Base styles & variables**/
+
+:root {
+  --clr-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --clr-soft-red: hsl(14, 88%, 65%);
+  --clr-shadow: hsl(260, 74%, 30%);
+
+  --bg-soft-violet: hsl(273, 75%, 66%);
+  --bg-soft-blue: hsl(240, 73%, 65%);
+
+  --txt-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --txt-dark-grayish-blue: hsl(240, 6%, 50%);
+
+  --divider-light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--bg-soft-violet),
+    var(--bg-soft-blue)
+  );
+}
+
+.title {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 8em 1.5em;
+}
+
+@media (min-width: 780px) {
+  .content {
+    margin: 4em 3em;
+  }
+}
+
+.content > * {
+  flex: 1;
+}
+
+.footer {
+  font-size: 11px;
+  text-align: center;
+}
+.footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+/** Component styles **/
+
+.card {
+  font-family: "Kumbh Sans", sans-serif;
+  max-width: 920px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px -20px var(--clr-shadow);
+  position: relative;
+}
+
+@media (min-width: 780px) {
+  .card {
+    display: flex;
+  }
+
+  .card > * {
+    flex: 1;
+  }
+}
+
+.card__header {
+  text-align: center;
+  background: url(./images/bg-pattern-mobile.svg) no-repeat center 0;
+  padding-bottom: 4.125em;
+}
+
+@media (min-width: 780px) {
+  .card__header {
+    background: url(./images/illustration-woman-online-desktop.svg) no-repeat
+        left -80px top 70px,
+      url(./images/bg-pattern-desktop.svg) top -290px left -573px no-repeat;
+    padding-bottom: 0;
+  }
+}
+
+.mobile-illustration {
+  max-width: 238px;
+  margin-top: -109px;
+}
+
+.desktop-illustration {
+  display: none;
+}
+
+@media (min-width: 780px) {
+  .mobile-illustration {
+    display: none;
+  }
+
+  .desktop-illustration {
+    display: initial;
+    position: absolute;
+    left: -93px;
+    top: 206px;
+  }
+}
+
+.card__body {
+  margin: 0 1.5em 3em;
+}
+
+@media (min-width: 780px) {
+  .card__body {
+    margin-top: 4.375em;
+    margin-left: 4em;
+    margin-bottom: 5.125em;
+  }
+}
+
+.card__title {
+  color: var(--clr-very-dark-desaturated-blue);
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+@media (min-width: 780px) {
+  .card__title {
+    text-align: initial;
+  }
+}
+
+.card__list {
+  font-size: 12px;
+}
+
+@media (min-width: 780px) {
+  .card__list {
+    margin-right: 5.6667em;
+  }
+}
+
+.details {
+  padding: 1.667em 0;
+  border-bottom: 1px solid var(--divider-light-grayish-blue);
+}
+
+.details__summary {
+  color: var(--txt-very-dark-grayish-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+}
+
+.details__summary:hover {
+  color: var(--clr-soft-red);
+}
+
+.details__summary::after {
+  content: "";
+  width: 10px;
+  height: 7px;
+  margin-left: auto;
+  background-image: url(./images/icon-arrow-down.svg);
+  transform: rotate(0deg);
+  transition: transform 0.1s ease-in-out;
+}
+
+@media (min-width: 780px) {
+  .details__summary::after {
+    margin-right: 1.333em;
+  }
+}
+
+.details[open] > .details__summary {
+  color: var(--txt-very-dark-grayish-blue);
+  font-weight: 700;
+  padding-bottom: 1.5em;
+}
+
+.details[open] > .details__summary::after {
+  transform: rotate(180deg);
+}
+
+.details__full {
+  color: var(--txt-dark-grayish-blue);
+  margin-right: 1em;
+}
+
+/** Utility classes **/
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
+}
