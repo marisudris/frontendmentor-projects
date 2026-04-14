@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontent-mentor-social-links-profile)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontent-mentor-social-links-profile/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/social-links-profile)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/social-links-profile/)
 
 ## My process
 

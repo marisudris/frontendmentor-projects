@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontent-mentor-results-summary-component)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontent-mentor-results-summary-component/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/results-summary-component)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/results-summary-component/)
 
 ## My process
 

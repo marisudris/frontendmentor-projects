@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/marisudris-frontend-mentor-recipe-page)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/marisudris-frontend-mentor-recipe-page/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/recipe-page)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/recipe-page/)
 
 ## My process
 

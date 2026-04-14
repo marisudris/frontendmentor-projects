@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontend-mentor-tip-calculator-app)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontend-mentor-tip-calculator-app/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/tip-calculator-app)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/tip-calculator-app/)
 
 ## My process
 

@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontend-mentor-time-tracking-dashboard)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontend-mentor-time-tracking-dashboard/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/time-tracking-dashboard)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/time-tracking-dashboard/)
 
 ## My process
 

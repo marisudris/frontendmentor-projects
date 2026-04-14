@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontend-mentor-four-card-feature-section)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontend-mentor-four-card-feature-section/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/four-card-feature-section)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/four-card-feature-section/)
 
 ## My process
 

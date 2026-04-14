@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/faq-accordion)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/faq-accordion)
+- Solution URL: [GitHub]()
+- Live Site URL: [GitHub Pages]()
 
 ## My process
 

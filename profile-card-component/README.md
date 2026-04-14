@@ -28,8 +28,8 @@ Build out the project to the designs provided (including the page background).
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontend-mentor-profile-card-component)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontend-mentor-profile-card-component/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/profile-card-component)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/profile-card-component/)
 
 ## My process
 

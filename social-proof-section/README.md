@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontend-mentor-social-proof-section)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontend-mentor-social-proof-section/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/social-proof-section)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/social-proof-section/)
 
 ## My process
 

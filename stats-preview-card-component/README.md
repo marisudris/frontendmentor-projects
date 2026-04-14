@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontend-mentor-stats-preview-card-component)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontend-mentor-stats-preview-card-component/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/stats-preview-card-component)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/stats-preview-card-component/)
 
 ## My process
 

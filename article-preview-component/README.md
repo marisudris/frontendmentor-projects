@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontend-mentor-article-preview-component)
-- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontend-mentor-article-preview-component/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/article-preview-component)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/article-preview-component/)
 
 ## My process
 
