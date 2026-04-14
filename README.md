@@ -1,6 +1,6 @@
 # Frontend Mentor Projects
 
-Collection of my [Frontend Mentor](https://www.frontendmentor.io/) challenges in a single monorepo.
+Collection of my [Frontend Mentor](https://www.frontendmentor.io/) challenge solutions in a single monorepo.
 
 ## Live Projects
 
