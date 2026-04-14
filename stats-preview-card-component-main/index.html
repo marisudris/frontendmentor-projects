@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+
+  <body>
+    <h1 class="page-heading">Stats preview card component</h1>
+    <main>
+      <div class="card">
+        <picture class="card__image">
+          <source
+            media="(min-width: 600px)"
+            srcset="./images/image-header-desktop.jpg"
+          />
+          <img
+            src="./images/image-header-mobile.jpg"
+            alt="People working in an open office space"
+            class="card__image"
+          />
+        </picture>
+        <article class="card__prose">
+          <h2 class="card__title">
+            Get <span class="accent">insights</span> that help your business
+            grow.
+          </h2>
+
+          <div class="card__body">
+            <p class="card__copy">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+
+            <div class="card__stats">
+              <div class="card__stat">
+                <span class="card__stat-figure">10k+</span>
+                <span class="card__stat-heading">companies</span>
+              </div>
+              <div class="card__stat">
+                <span class="card__stat-figure">314</span>
+                <span class="card__stat-heading">templates</span>
+              </div>
+              <div class="card__stat">
+                <span class="card__stat-figure">12M+</span>
+                <span class="card__stat-heading">queries</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/marisudris">Māris Ūdris</a
+      >.
+    </footer>
+  </body>
+</html>
