@@ -30,9 +30,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/marisudris/frontend-mentor-order-component)
-- Live Site URL: [Github Pages](https://marisudris.github.io/frontend-mentor-order-component/)
-
 - Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/order-component)
 - Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/order-component/)
 
