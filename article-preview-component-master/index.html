@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <header class="header hidden">
+      <h1>Article preview component</h1>
+    </header>
+    <main class="main">
+      <div class="card">
+        <div class="card__hero">
+          <img
+            class="card__image"
+            src="./images/drawers.jpg"
+            alt="green cabinet with drawers and a vase full of dried bentgras and a framed text saying 'love will keep us alive' on top of it"
+          />
+        </div>
+        <section class="card__body">
+          <h2 class="card__title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h2>
+
+          <p class="card__prose">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <footer class="card__footer">
+            <div class="attribution">
+              <img
+                class="attribution__image"
+                src="./images/avatar-michelle.jpg"
+                alt="portrait of a person"
+              />
+              <span class="attribution__name">Michelle Appleton</span>
+              <time class="attribution__subtext" datetime="2020-06-28"
+                >28 Jun 2020</time
+              >
+            </div>
+            <button
+              class="share js-share"
+              id="menubutton"
+              aria-controls="social-menu"
+              aria-label="Social Medial Link Navigation Button"
+              aria-expanded="false"
+            >
+              <span class="hidden">Share</span>
+              <svg
+                class="share__image"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="13"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </button>
+            <div class="toggletip hidden js-toggletip">
+              <h2 class="toggletip__title">Share</h2>
+              <ul class="social" id="social-menu">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img
+                      class="social__image"
+                      src="./images/icon-facebook.svg"
+                      aria-hidden="true"
+                      alt=""
+                    />
+                    <span class="hidden">Facebook</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img
+                      class="social__image"
+                      src="images/icon-twitter.svg"
+                      aria-hidden="true"
+                      alt=""
+                    />
+                    <span class="hidden">Twitter</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img
+                      class="social__image"
+                      src="./images/icon-pinterest.svg"
+                      aria-hidden="true"
+                      alt=""
+                    />
+                    <span class="hidden">Pinterest</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </main>
+    <footer class="footer hidden">
+      Challenge by
+      <a
+        class="footer__link"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a class="footer__link" href="https://github.com/marisudris"
+        >Māris Ūdris</a
+      >.
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
