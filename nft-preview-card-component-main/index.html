@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&  display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <header class="visually-hidden">
+      <h1>NFT preview card component</h1>
+    </header>
+
+    <main class="main">
+      <article class="card">
+        <a href="#" class="card-image-container" aria-label="NFT preview">
+          <img class="card-image" src="images/image-equilibrium.jpg" alt="a glass cube standing on one of its vertices" />
+          <div class="card-image-overlay">
+            <img src="images/icon-view.svg" alt="" aria-hidden="true" class="view-icon">
+          </div>
+        </a>
+        <h2 class="card-title"><a class="card-link" href="#">Equilibrium #3429</a></h2>
+        <p class="card-text">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card-stats">
+          <span class="card-stats-value">
+            <img src="images/icon-ethereum.svg" aria-hidden="true" alt="">
+            <span>0.041 <abbr title="Ether">ETH</abbr></span>
+          </span>
+          <span class="card-stats-eta">
+            <img src="images/icon-clock.svg" aria-hidden="true" alt="" />
+            <span>3 days left</span>
+          </span>
+        </div>
+        <div class="card-creator">
+          <img
+            src="images/image-avatar.png"
+            class="card-creator-avatar"
+            alt="Portrait of Jules Wyvern"
+          />
+          <p>
+            Creation of <a href="#" class="card-link">Jules Wyvern</a>
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="attribution visually-hidden">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="frontendmentor.io/profile/marisudris">Maris</a>.
+    </footer>
+  </body>
+</html>
