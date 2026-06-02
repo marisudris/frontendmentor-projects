@@ -53,17 +53,18 @@ body {
 }
 
 .card-title {
-    font-size: 1.25rem;
+    font-size: clamp(1.25rem, calc(-0.17rem + 6.061vw), 1.5rem)
 }
 
 .card-description {
     color: var(--clr-gray-500);
-    font-size: 0.875rem;
+    font-size: clamp(0.875rem, calc(0.165rem + 3.03vw), 1rem);
 }
 
 .card-tag,
 .card-date {
     font-size: 0.75rem;
+    font-size: clamp(0.75rem, calc(0.04rem + 3.03vw), 0.875rem)
 }
 
 .card-date {
