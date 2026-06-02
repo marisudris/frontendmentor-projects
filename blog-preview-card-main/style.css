@@ -1,0 +1,150 @@
+/** Reset */
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+    box-sizing: border-box;
+    --clr-yellow: #F4D04E;
+    --clr-gray-950: #111111;
+    --clr-gray-500: #6b6b6b;
+    --clr-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+p {
+    margin: 0;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/** Typography */
+body {
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.5;
+}
+
+.card {
+    color: var(--clr-gray-950);
+}
+
+.card-title,
+.card-tag,
+.card-author {
+    font-weight: 800;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-description {
+    color: var(--clr-gray-500);
+    font-size: 0.875rem;
+}
+
+.card-tag,
+.card-date {
+    font-size: 0.75rem;
+}
+
+.card-date {
+    font-weight: 400;
+}
+
+.card-author {
+    font-size: 0.875rem;
+}
+
+/** Layout */
+body {
+    background-color: var(--clr-yellow);
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: min(24em, 87.2%);
+    padding: 1.5em;
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-gray-950);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px black;
+}
+
+.card-img {
+    order: -1;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75em;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.card-tag {
+    order: -2;
+    background-color: var(--clr-yellow);
+    padding: 0.28em 0.86em;
+    border-radius: 4px;
+}
+
+.card-date {
+    order: -1;
+}
+
+.card-author {
+    display: flex;
+    align-items: center;
+    gap: 0.86em;
+}
+
+.card-author-avatar {
+    width: 32px;
+    height: 32px;
+}
+
+/** Utilities */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
