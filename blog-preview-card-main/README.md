@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: [https://marisudris.github.io/frontendmentor-projects/blog-preview-card-main/](https://marisudris.github.io/frontendmentor-projects/blog-preview-card-main/)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/blog-preview-card-main)
+- Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-projects/blog-preview-card-main/)
 
 ## My process
 
