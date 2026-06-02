@@ -29,6 +29,12 @@ h2 {
     margin-top: 0;
 }
 
+a {
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -54,6 +60,11 @@ body {
 
 .card-title {
     font-size: clamp(1.25rem, calc(-0.087rem + 7.692cqw), 1.5rem);
+}
+
+.card-title:hover,
+.card-title:focus-visible {
+    color: var(--clr-yellow);
 }
 
 .card-description {
