@@ -63,7 +63,7 @@ body {
 }
 
 .card-title:hover,
-.card-title:focus-visible {
+.card-title:focus-within {
     color: var(--clr-yellow);
 }
 
