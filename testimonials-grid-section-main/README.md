@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-challenges/tree/main/testimonials-grid-section-main)
+- Solution URL: [GitHub](https://github.com/marisudris/frontendmentor-projects/tree/main/testimonials-grid-section-main)
 - Live Site URL: [GitHub Pages](https://marisudris.github.io/frontendmentor-challenges/testimonials-grid-section-main/)
 
 ## My process
