@@ -7,11 +7,14 @@
 
     --clr-white: hsl(0, 0%, 100%);
     --clr-grey-100: hsl(214, 17%, 92%);
+    --clr-grey-100-alpha: hsla(214, 17%, 92%, 0.8);
     --clr-grey-200: hsl(0, 0%, 81%);
     --clr-grey-400: hsl(224, 10%, 45%);
     --clr-grey-500: hsl(217, 19%, 35%);
+    --clr-grey-500-alpha: hsla(217, 19%, 35%, 0.8);
     --clr-dark-blue: hsl(219, 29%, 14%);
     --clr-black: hsl(0, 0%, 7%);
+
 }
 
 *,
@@ -47,21 +50,27 @@ body {
 }
 
 .testimonial-title {
+    font-size: 1.22rem;
     line-height: initial;
 }
 
 .testimonial:nth-child(1),
 .testimonial:nth-child(2),
 .testimonial:nth-child(4) {
+    color: var(--clr-grey-100-alpha);
+}
+
+:is(.testimonial:nth-child(1),
+    .testimonial:nth-child(2)) .testimonial-title {
     color: var(--clr-grey-100);
 }
 
 .testimonial:nth-child(3),
 .testimonial:nth-child(5) {
-    color: var(--clr-grey-500);
+    color: var(--clr-grey-500-alpha);
 }
 
-.profile-name {
+.testimonial {
     font-weight: 600;
 }
 
@@ -70,9 +79,6 @@ body {
 }
 
 /** Layout */
-body {
-}
-
 main {
     display: flex;
     justify-content: center;
@@ -82,9 +88,17 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem 2rem;
+    row-gap: 2em;
     width: min(81.3%, 1115px);
+
+    @media (min-width: 750px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em 2em;
+    }
+
+    @media (min-width: 1000px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .testimonial {
@@ -93,14 +107,19 @@ main {
     box-shadow: 40px 60px 60px var(--clr-grey-200);
 }
 
-.testimonial--showcase {
-    background: url('images/bg-pattern-quotation.svg') no-repeat;
-    background-position-x: 86%;
+@media (min-width: 750px) {
+    .testimonial--showcase {
+        background: url('images/bg-pattern-quotation.svg') no-repeat;
+        background-position-x: 86%;
+    }
 }
 
 .testimonial:nth-child(1) {
-    grid-column: span 2;
     background-color: var(--clr-purple-500);
+
+    @media (min-width: 1000px) {
+        grid-column: span 2;
+    }
 }
 
 .testimonial:nth-child(2) {
@@ -113,12 +132,17 @@ main {
 }
 
 .testimonial:nth-child(5) {
-    grid-column: 4;
-    grid-row: 1 / span 2;
+    @media (min-width: 1000px) {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
 }
 
 .testimonial:nth-child(4) {
-    grid-column: span 2;
+    @media (min-width: 1000px) {
+        grid-column: span 2;
+    }
+
     background-color: var(--clr-dark-blue);
 }
 
