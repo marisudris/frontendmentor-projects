@@ -25,7 +25,7 @@ Collection of my [Frontend Mentor](https://www.frontendmentor.io/) challenge sol
 - [Social Links Profile](./social-links-profile/)
 - [Social Proof Section](./social-proof-section/)
 - [Stats Preview Card](./stats-preview-card-component/)
-- [Testimonials Grid Section](./testimonials-grid-section-main/)
+- [Testimonials Grid Section](./testimonials-grid-section/)
 - [Time Tracking Dashboard](./time-tracking-dashboard/)
 - [Tip Calculator](./tip-calculator-app/)
 
